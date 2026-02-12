@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+    inputs:
+      country:
+        required: true
+        
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
+      - name: List Files
+        run: ls -la
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: List Files
+        run: ls -la
+        
+  
