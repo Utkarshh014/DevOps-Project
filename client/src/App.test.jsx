@@ -4,7 +4,6 @@ import { describe, it, expect, vi } from 'vitest';
 
 describe('App', () => {
     it('renders ShopSmart title', () => {
-        // Mock fetch
         global.fetch = vi.fn(() =>
             Promise.resolve({
                 json: () => Promise.resolve({ status: 'ok', message: 'Test Msg', timestamp: 'now' })
