@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - demo
+      - secondary
   workflow_dispatch:
 
 jobs:
