@@ -1,0 +1,49 @@
+
+> shopsmart-frontend@0.0.0 test
+> vitest --run
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/Users/utkarshshekhar/Desktop/devops_prj1/client[39m
+
+ [32m✓[39m src/components/SearchBar.test.jsx [2m([22m[2m5 tests[22m[2m)[22m[33m 526[2mms[22m[39m
+ [32m✓[39m src/__tests__/unit/ProductDetails.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[33m 397[2mms[22m[39m
+ [32m✓[39m src/__tests__/unit/Home.test.jsx [2m([22m[2m10 tests[22m[2m)[22m[32m 270[2mms[22m[39m
+ [32m✓[39m src/__tests__/unit/Login.test.jsx [2m([22m[2m12 tests[22m[2m)[22m[33m 357[2mms[22m[39m
+ [31m❯[39m src/__tests__/integration/products.test.jsx [2m([22m[2m7 tests[22m[2m | [22m[31m7 failed[39m[2m)[22m[32m 83[2mms[22m[39m
+[31m     [31m×[31m should render products on home page from API[39m[32m 40[2mms[22m[39m
+[31m     [31m×[31m should render product details when opening product route[39m[32m 7[2mms[22m[39m
+[31m     [31m×[31m should show error message when products API fails[39m[32m 8[2mms[22m[39m
+[31m     [31m×[31m should show error when navigating to a non-existent product[39m[32m 6[2mms[22m[39m
+[31m     [31m×[31m should show loading state while products are being fetched[39m[32m 10[2mms[22m[39m
+[31m     [31m×[31m should render product price formatted with 2 decimal places[39m[32m 3[2mms[22m[39m
+[31m     [31m×[31m should show Add to Cart and Save for Later buttons on product detail page[39m[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/unit/Signup.test.jsx [2m([22m[2m18 tests[22m[2m)[22m[33m 491[2mms[22m[39m
+ [32m✓[39m src/utils.test.js [2m([22m[2m8 tests[22m[2m)[22m[32m 82[2mms[22m[39m
+ [32m✓[39m src/components/ProductList.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 257[2mms[22m[39m
+ [32m✓[39m src/components/ProductCard.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 145[2mms[22m[39m
+ [32m✓[39m src/App.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 85[2mms[22m[39m
+ [31m❯[39m src/__tests__/integration/auth.test.jsx [2m([22m[2m18 tests[22m[2m | [22m[31m7 failed[39m[2m)[22m[33m 2458[2mms[22m[39m
+     [33m[2m✓[22m[39m should successfully login with valid credentials [33m 545[2mms[22m[39m
+     [32m✓[39m should show error with invalid credentials[32m 158[2mms[22m[39m
+     [32m✓[39m should show error for non-existent user[32m 209[2mms[22m[39m
+     [33m[2m✓[22m[39m should handle button state during login [33m 421[2mms[22m[39m
+     [32m✓[39m should display network error message when login request fails[32m 291[2mms[22m[39m
+     [32m✓[39m should successfully create a new account[32m 190[2mms[22m[39m
+     [32m✓[39m should show error when email already exists[32m 104[2mms[22m[39m
+     [32m✓[39m should validate password confirmation locally[32m 112[2mms[22m[39m
+     [32m✓[39m should validate password length locally[32m 81[2mms[22m[39m
+     [32m✓[39m should allow signup without optional name fields[32m 194[2mms[22m[39m
+     [32m✓[39m should display network error message when signup request fails[32m 129[2mms[22m[39m
+[31m     [31m×[31m should render home page on root route[39m[32m 7[2mms[22m[39m
+[31m     [31m×[31m should render login page on /login route[39m[32m 2[2mms[22m[39m
+[31m     [31m×[31m should render signup page on /signup route[39m[32m 2[2mms[22m[39m
+[31m     [31m×[31m should fetch and display backend health status[39m[32m 2[2mms[22m[39m
+[31m     [31m×[31m should show welcome message when a valid token is already in localStorage[39m[32m 2[2mms[22m[39m
+[31m     [31m×[31m should clear the token and show login/signup links after logout[39m[32m 2[2mms[22m[39m
+[31m     [31m×[31m should clear invalid token and show unauthenticated state[39m[32m 1[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m9 passed[39m[22m[90m (11)[39m
+[2m      Tests [22m [1m[31m14 failed[39m[22m[2m | [22m[1m[32m75 passed[39m[22m[90m (89)[39m
+[2m   Start at [22m 16:43:07
+[2m   Duration [22m 6.34s[2m (transform 1.25s, setup 2.09s, import 14.42s, tests 5.15s, environment 11.48s)[22m
+

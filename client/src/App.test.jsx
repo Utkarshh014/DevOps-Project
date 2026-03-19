@@ -35,12 +35,17 @@ describe('App', () => {
                     json: () => Promise.resolve({ status: 'ok', message: 'Test Msg', timestamp: 'now' })
                 });
             }
-            if (url.includes('/api/products/search')) {
+            if (url.includes('/api/products')) {
                 return Promise.resolve({
                     ok: true,
-                    json: () => Promise.resolve([
-                        { id: 1, name: 'Integration Test Product', price: 100, category: 'Test', inStock: true }
-                    ])
+                    json: () => Promise.resolve({
+                        success: true,
+                        data: {
+                            products: [
+                                { id: 1, name: 'Integration Test Product', price: 100, category: 'Test', inStock: true }
+                            ]
+                        }
+                    })
                 });
             }
             return Promise.reject(new Error('Unknown URL'));
