@@ -18,5 +18,10 @@ export default defineConfig({
         environment: 'jsdom',
         setupFiles: './src/setupTests.js',
         exclude: ['**/node_modules/**', '**/dist/**', './e2e/**'],
+        reporters: ['default', 'junit', 'html'],
+        outputFile: {
+            junit: './test-results/junit.xml',
+            html: './test-results/index.html'
+        }
     },
 })
