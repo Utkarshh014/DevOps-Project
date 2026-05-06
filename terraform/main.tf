@@ -62,6 +62,15 @@ resource "aws_security_group_rule" "ecs_from_alb" {
   source_security_group_id = aws_security_group.alb_sg.id
 }
 
+resource "aws_security_group_rule" "ecs_public_3000" {
+  type              = "ingress"
+  from_port         = 3000
+  to_port           = 3000
+  protocol          = "tcp"
+  security_group_id = "sg-0807e7b3ce4f6c97c"
+  cidr_blocks       = ["0.0.0.0/0"]
+}
+
 resource "aws_lb" "app_alb" {
   name               = "devops-app-alb"
   internal           = false
