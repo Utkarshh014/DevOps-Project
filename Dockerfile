@@ -4,6 +4,7 @@ WORKDIR /app
 COPY server/package*.json ./
 RUN npm install
 COPY server/ .
+RUN npx prisma generate
 RUN npm run build || echo "No build step"
 
 # Stage 2: Production
